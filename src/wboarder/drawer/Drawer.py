@@ -1,4 +1,4 @@
-##  @package src.wboarder.drawer.Drawer
+##  @package wboarder.drawer.Drawer
 #
 #   Contains the abstract Drawer class
 #
@@ -20,11 +20,11 @@ class Drawer(ABC):
     #   Initializes drawer instance
     @abstractmethod
     def init(self, board : Board, path : Path):
-        pass
+        raise NotImplementedError
 
     ##  Abstract method
     #
     #   Draws a object based
     @abstractmethod
     def draw(self):
-        pass
+        raise NotImplementedError

@@ -1,6 +1,6 @@
-##  @package src
+##  @package wboarder
 #
-#   /author smaio
+#   \author Steven Maio
 
 def start(configuration):
     pass

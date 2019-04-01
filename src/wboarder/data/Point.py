@@ -1,4 +1,4 @@
-##  @package src.wboarder.data.Point
+##  @package wboarder.data.Point
 #
 #   Contains the Point class
 #

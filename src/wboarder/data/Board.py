@@ -1,4 +1,4 @@
-##  @package src.wboard.data.Board
+##  @package wboarder.data.Board
 #
 #   Contains the Board class
 #
@@ -47,9 +47,11 @@ class Board:
     #   @param row the row number of the entry
     #   @param col the column number of the entry
     #   @return the float value stored at row,col
-    def getValue(self, row : int, col : int) -> float:
-        if 0 <= x < self._num_rows and 0 <= y < self._num_cols:
-            return self._points[x][y]
+    def getValue(self, point : Point) -> float:
+        row = point.getRow()
+        col = point.getCol()
+        if 0 <= row < self._num_rows and 0 <= col < self._num_cols:
+            return self._points[row][col]
         else:
             raise ValueError("illegal value for row or col")
 

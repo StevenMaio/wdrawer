@@ -1,4 +1,4 @@
-##  @package src.wboarder.data.Path
+##  @package wboarder.data.Path
 #
 #   Contains the path class used to draw a picture
 
