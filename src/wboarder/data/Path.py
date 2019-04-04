@@ -17,10 +17,11 @@ class Path:
         def __init__(self, path):
             self._index = 0
             self._path = path
+            self._length = len(path._points)
 
         def next(self):
             index = self._index
-            if index == len(path._points):
+            if index == self._length:
                 raise StopIteration
             else:
                 nextEntry = self._path._path[index]
