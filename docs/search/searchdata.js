@@ -1,9 +1,9 @@
 var indexSectionsWithContent =
 {
   0: "_abcdgipsw",
-  1: "bdp",
+  1: "bdip",
   2: "w",
-  3: "_acdgis",
+  3: "_acdgips",
   4: "w"
 };
 
