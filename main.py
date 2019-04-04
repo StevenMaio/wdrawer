@@ -4,8 +4,10 @@
 
 import argparse
 
+
 def main(**kwargs):
     pass
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="An argument parser")

@@ -20,5 +20,5 @@ class Pather(ABC):
     #
     #   @return a path object that a drawer uses to draw 
     @abstractmethod
-    def createPath(board : Board) -> Path:
+    def createPath(self, board : Board) -> Path:
         raise NotImplementedError

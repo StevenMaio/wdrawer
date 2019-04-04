@@ -8,6 +8,7 @@ from src.wboarder.data.Board import Board
 
 from abc import ABC, abstractmethod
 
+
 ##  Abstract class
 #
 #   Processes an image and creates a Board object from it

@@ -38,8 +38,8 @@ class Board:
     ## Returns the number of rows on the board
     #
     #   @return an integer value indicating the total number of columns
-    def getHeight(self) -> int:
-        return self._num_rows
+    def getNumCols(self) -> int:
+        return self._num_cols
 
     ##  Accessor method for the board. Returns the location (row, col) in the
     #   board.

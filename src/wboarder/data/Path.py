@@ -10,7 +10,7 @@ from src.wboarder.data.Point import Point
 #   Is iterable
 class Path:
 
-    ## Nested iterator class. Iterates over the points in a path.
+    #   Nested iterator class. Iterates over the points in a path.
     #
     class PathIterator:
 
@@ -19,7 +19,7 @@ class Path:
             self._path = path
             self._length = len(path._points)
 
-        def next(self):
+        def next(self) -> Point:
             index = self._index
             if index == self._length:
                 raise StopIteration
@@ -27,17 +27,16 @@ class Path:
                 nextEntry = self._path._path[index]
                 self._index += 1
 
-    ## Constructs an empty path object
+    ##  Constructs an empty path object
     #
     def __init__(self):
         self._points = []
 
     ##  Adds the point given by (row, col) to the path object.
     #
-    #   @param row the row number of the new point in the path
-    #   @param col the column number of the new point in the path
-    def addPoint(self, row : int, col : int) -> None:
-        self._points.append(Point(row=row, col=col))
+    #   @param point a point being added to the path
+    def addPoint(self, point : Point) -> None:
+        self._points.append(point)
 
     def __iter__(self) -> PathIterator:
         return PathIterator(path=self)
