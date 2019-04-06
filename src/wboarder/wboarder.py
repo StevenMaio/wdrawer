@@ -6,10 +6,12 @@
 ##  Starts the application
 #
 #   @param configuration the configuration of the application
-def start(configuration):
-    # TODO: Initialize image processor and process image
+def start(configuration : Configuration, image : str) -> None:
+    image_processor = configuration.initImageProcessor()
+    pather = configuration.initPather()
+    drawer = configuration.initDrawer()
 
-    # TODO: Load pather and create a path
-
-    # TODO: Initialize the drawer and then draw the image
-    pass
+    board = image_processor.processImage()
+    path = pather.createPath(board=board)
+    drawer.init(board=board, path=path)
+    drawer.draw()

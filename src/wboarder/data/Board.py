@@ -18,14 +18,15 @@ class Board:
     #
     #   @param num_cols the number of columns in the board
     #   @param num_rows the number of rows in the board
-    def __init__(self, num_rows : int, num_cols : int):
+    #   @param default_value the default value to assign to each row
+    def __init__(self, num_rows : int, num_cols : int, default_value : object):
         self._num_rows = num_rows
         self._num_cols = num_rows
         points = []
         for i in range(num_rows):
             rows = []
             for j in range(num_rows):
-                rows.append(0)
+                rows.append(default_value)
             poins.append(rows)
         self._points = points
 

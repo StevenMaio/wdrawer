@@ -20,3 +20,11 @@ class ImageProcessor(ABC):
     @abstractmethod
     def processImage(self) -> Board:
         raise NotImplementedError
+
+    ##  Abstract method. Sets the path to the image, but however that's
+    #   handled is up to the implementation of ImageProcessor
+    #
+    #   @param image_path the path to the image.
+    @abstractmethod
+    def setImage(image_path : str) -> None:
+        raise NotImplementedError
