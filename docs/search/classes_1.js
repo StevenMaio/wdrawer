@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['drawer',['Drawer',['../classwboarder_1_1drawer_1_1_drawer_1_1_drawer.html',1,'wboarder::drawer::Drawer']]]
+  ['configuration',['Configuration',['../classwboarder_1_1configuration_1_1_configuration_1_1_configuration.html',1,'wboarder::configuration::Configuration']]]
 ];

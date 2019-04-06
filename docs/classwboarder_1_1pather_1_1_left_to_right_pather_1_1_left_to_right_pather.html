@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>wboarder: wboarder.data.Path.Path Class Reference</title>
+<title>wboarder: wboarder.pather.LeftToRightPather.LeftToRightPather Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,43 +61,40 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacewboarder.html">wboarder</a></li><li class="navelem"><b>data</b></li><li class="navelem"><a class="el" href="namespacewboarder_1_1data_1_1_path.html">Path</a></li><li class="navelem"><a class="el" href="classwboarder_1_1data_1_1_path_1_1_path.html">Path</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacewboarder.html">wboarder</a></li><li class="navelem"><b>pather</b></li><li class="navelem"><a class="el" href="namespacewboarder_1_1pather_1_1_left_to_right_pather.html">LeftToRightPather</a></li><li class="navelem"><a class="el" href="classwboarder_1_1pather_1_1_left_to_right_pather_1_1_left_to_right_pather.html">LeftToRightPather</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="classwboarder_1_1data_1_1_path_1_1_path-members.html">List of all members</a>  </div>
+<a href="classwboarder_1_1pather_1_1_left_to_right_pather_1_1_left_to_right_pather-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">wboarder.data.Path.Path Class Reference</div>  </div>
+<div class="title">wboarder.pather.LeftToRightPather.LeftToRightPather Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>A path class used to draw an image.  
- <a href="classwboarder_1_1data_1_1_path_1_1_path.html#details">More...</a></p>
+<p>Creates a path which goes from left to right.  
+ <a href="classwboarder_1_1pather_1_1_left_to_right_pather_1_1_left_to_right_pather.html#details">More...</a></p>
+
+<p>Inherits Pather.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a52d4b269e92f50be004fbd09b3e9f244"><td class="memItemLeft" align="right" valign="top"><a id="a52d4b269e92f50be004fbd09b3e9f244"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwboarder_1_1data_1_1_path_1_1_path.html#a52d4b269e92f50be004fbd09b3e9f244">__init__</a> (self)</td></tr>
-<tr class="memdesc:a52d4b269e92f50be004fbd09b3e9f244"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an empty path object. <br /></td></tr>
-<tr class="separator:a52d4b269e92f50be004fbd09b3e9f244"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac860f429d145580f65bc1ac02cc34b3a"><td class="memItemLeft" align="right" valign="top">None&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwboarder_1_1data_1_1_path_1_1_path.html#ac860f429d145580f65bc1ac02cc34b3a">addPoint</a> (self, Point point)</td></tr>
-<tr class="memdesc:ac860f429d145580f65bc1ac02cc34b3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the point given by (row, col) to the path object.  <a href="#ac860f429d145580f65bc1ac02cc34b3a">More...</a><br /></td></tr>
-<tr class="separator:ac860f429d145580f65bc1ac02cc34b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f1107451067e795e308f801ed8db965"><td class="memItemLeft" align="right" valign="top">Path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwboarder_1_1pather_1_1_left_to_right_pather_1_1_left_to_right_pather.html#a7f1107451067e795e308f801ed8db965">createPath</a> (self, Board board)</td></tr>
+<tr class="memdesc:a7f1107451067e795e308f801ed8db965"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a Path object from a given instance of a Board, which moves left to right on each row.  <a href="#a7f1107451067e795e308f801ed8db965">More...</a><br /></td></tr>
+<tr class="separator:a7f1107451067e795e308f801ed8db965"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A path class used to draw an image. </p>
-<p>Is iterable </p>
+<div class="textblock"><p>Creates a path which goes from left to right. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac860f429d145580f65bc1ac02cc34b3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac860f429d145580f65bc1ac02cc34b3a">&#9670;&nbsp;</a></span>addPoint()</h2>
+<a id="a7f1107451067e795e308f801ed8db965"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f1107451067e795e308f801ed8db965">&#9670;&nbsp;</a></span>createPath()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"> None wboarder.data.Path.Path.addPoint </td>
+          <td class="memname"> Path wboarder.pather.LeftToRightPather.LeftToRightPather.createPath </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>self</em>, </td>
@@ -105,8 +102,8 @@ def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Point&#160;</td>
-          <td class="paramname"><em>point</em>&#160;</td>
+          <td class="paramtype">Board&#160;</td>
+          <td class="paramname"><em>board</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -116,18 +113,13 @@ def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
       </table>
 </div><div class="memdoc">
 
-<p>Adds the point given by (row, col) to the path object. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">point</td><td>a point being added to the path </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Creates a Path object from a given instance of a Board, which moves left to right on each row. </p>
+<dl class="section return"><dt>Returns</dt><dd>a path object </dd></dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/wboarder/data/Path.py</li>
+<li>src/wboarder/pather/LeftToRightPather.py</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
