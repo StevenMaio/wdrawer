@@ -18,12 +18,13 @@ class Configuration(ABC):
     ##  This method will be called before the application is run. This will
     #   allow further custom configuration to the scenario, as users will 
     #   be givne the ability to process the rest of the program arguments
-    #   inside this method
+    #   inside this method. These arguments cannot conflict with the args
+    #   to **wboarder**.
     #
     #   @param args a list of strings containing the rest of the program
     #   arguments which were not essential to the application
     @abstractmethod
-    def initConfiguration(args : list) -> None:
+    def init(args : list) -> None:
         raise NotImplementedError
 
     ##  Returns the ImageProcessor used by the configuation

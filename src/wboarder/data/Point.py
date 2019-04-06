@@ -28,3 +28,6 @@ class Point:
     #   @return an integer value indicating the column number of the point
     def getCol(self) -> int:
         return self._col
+
+    def __str__(self):
+        print("({},{})".format(self._row, self._col))
