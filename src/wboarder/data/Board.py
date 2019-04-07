@@ -62,7 +62,7 @@ class Board:
     #   @param row the row number of the entry being modified
     #   @param col the column number of the entry being modified
     #   @param value the new value of the entry being modified
-    def setValue(self, row : int, col : int, value : float) -> None
+    def setValue(self, row : int, col : int, value : object) -> None:
         if 0 <= x < self._num_rows and 0 <= y < self._num_cols:
             self._points[x][y] = value
         else:

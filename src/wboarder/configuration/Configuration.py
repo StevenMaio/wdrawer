@@ -1,6 +1,6 @@
-##  @package wboarder.configuation.Configuratoin
+##  @package wboarder.configuration.Configuration
 #
-#   Contains the Configuratoin class
+#   Contains the Configuration class
 #
 #   \author Steven Maio
 
@@ -9,6 +9,7 @@ from src.wboarder.drawer.Drawer import Drawer
 from src.wboarder.pather.Pather import Pather
 
 from abc import ABC, abstractmethod
+
 
 ##  A configuration object. Must be implemented by the user for a custom
 #   drawing.
@@ -27,7 +28,7 @@ class Configuration(ABC):
     def init(args : list) -> None:
         raise NotImplementedError
 
-    ##  Returns the ImageProcessor used by the configuation
+    ##  Returns the ImageProcessor used by the configuration
     #
     #   @return an instance of ImageProcessor
     @abstractmethod

@@ -2,6 +2,8 @@
 #
 #   \author Steven Maio
 
+from src.wboarder.configuration.Configuration import Configuration
+
 
 ##  Starts the application
 #
@@ -10,7 +12,6 @@ def start(configuration : Configuration, image : str) -> None:
     image_processor = configuration.initImageProcessor()
     pather = configuration.initPather()
     drawer = configuration.initDrawer()
-
     board = image_processor.processImage()
     path = pather.createPath(board=board)
     drawer.init(board=board, path=path)
