@@ -1,6 +1,7 @@
 ##  @package wboarder.configuration.configurations.PlainConfiguration
 #
-#   Contains the PlainConfiguration class.
+#   Contains the PlainConfiguration class. Uses LeftToRightPather and
+#   PrintDrawer.
 #
 #   \author Steven Maio
 

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['addpoint',['addPoint',['../classwboarder_1_1data_1_1_path_1_1_path.html#ac860f429d145580f65bc1ac02cc34b3a',1,'wboarder::data::Path::Path']]]
+  ['addpoint',['addPoint',['../classsrc_1_1wboarder_1_1data_1_1_path_1_1_path.html#aac4985d40c91b3e4e5afe5b4c5c6f7ea',1,'src::wboarder::data::Path::Path']]]
 ];
