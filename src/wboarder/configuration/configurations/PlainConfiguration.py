@@ -7,6 +7,7 @@
 
 from src.wboarder.configuration.Configuration import  Configuration
 from src.wboarder.image_processor.ImageProcessor import ImageProcessor
+from src.wboarder.image_processor.processors.DiscreteProcessor import DiscreteProcessor
 from src.wboarder.drawer.Drawer import Drawer
 from src.wboarder.drawer.drawers.PrintDrawer import PrintDrawer
 from src.wboarder.pather.LeftToRightPather import LeftToRightPather
@@ -31,7 +32,9 @@ class PlainConfiguration(Configuration):
     #
     #   @return an instance of ImageProcessor
     def initImageProcessor(self) -> ImageProcessor:
-        pass
+        processor = DiscreteProcessor()
+        processor.setThreshold(100)
+        return processor
 
     ##  Returns an instance of LeftToRightPather
     #
