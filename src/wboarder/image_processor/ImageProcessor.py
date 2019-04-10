@@ -26,5 +26,5 @@ class ImageProcessor(ABC):
     #
     #   @param image_path the path to the image.
     @abstractmethod
-    def setImage(image_path : str) -> None:
+    def setImage(self, image_path : str) -> None:
         raise NotImplementedError

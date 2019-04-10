@@ -7,6 +7,7 @@
 from src.wboarder.pather.Pather import Pather
 from src.wboarder.data.Path import Path
 from src.wboarder.data.Point import Point
+from src.wboarder.data.Board import Board
 
 
 ##  Creates a path which goes from left to right

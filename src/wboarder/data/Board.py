@@ -42,13 +42,13 @@ class Board:
     def getNumCols(self) -> int:
         return self._num_cols
 
-    ##  Accessor method for the board. Returns the location (row, col) in the
-    #   board.
+    ##  Accessor method for the board. Returns the value at location (row, col)
+    #   on the board.
     #
     #   @param row the row number of the entry
     #   @param col the column number of the entry
     #   @return the float value stored at row,col
-    def getValue(self, point : Point) -> float:
+    def getValue(self, point : Point) -> object:
         row = point.getRow()
         col = point.getCol()
         if 0 <= row < self._num_rows and 0 <= col < self._num_cols:

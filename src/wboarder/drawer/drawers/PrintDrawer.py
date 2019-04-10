@@ -5,6 +5,8 @@
 #   \author Steven Maio
 
 from src.wboarder.drawer.Drawer import Drawer
+from src.wboarder.data.Board import Board
+from src.wboarder.data.Path import Path
 
 
 ##  Drawer implementation which prints the points of the path to system out

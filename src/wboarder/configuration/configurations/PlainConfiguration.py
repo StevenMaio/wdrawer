@@ -17,8 +17,6 @@ from src.wboarder.pather.Pather import Pather
 #
 class PlainConfiguration(Configuration):
 
-    ##  Constructs a new instance of PlainConfiguration
-    #
     def __init__(self):
         pass
 
@@ -26,7 +24,7 @@ class PlainConfiguration(Configuration):
     #   necessary
     #
     #   @param args a list of arguments to the constructor
-    def init(args : list) -> None:
+    def init(self, args : list) -> None:
         pass
 
     ##  Returns a basic ImageProcessor implementation
@@ -38,7 +36,7 @@ class PlainConfiguration(Configuration):
     ##  Returns an instance of LeftToRightPather
     #
     #   @return an instance of LeftToRightPather
-    def initpather(self) -> Pather:
+    def initPather(self) -> Pather:
         return LeftToRightPather()
 
     ##  Returns an instace of PrintDrawer
@@ -46,3 +44,9 @@ class PlainConfiguration(Configuration):
     #   @return an instance of PrintDrawer
     def initDrawer(self) -> Drawer:
         return PrintDrawer()
+
+##  Creates a new instance of the PlainConfiguration class
+#
+#   @return a PlainConfiguration instance
+def createConfiguration() -> PlainConfiguration:
+    return PlainConfiguration()

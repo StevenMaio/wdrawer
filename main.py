@@ -13,8 +13,13 @@ import importlib
 
 
 def main(image : str, configuration : str, args : list) -> None:
-    config = None
-    wboarder.start(image=image, configuration=config)
+    try:
+        config_module = globals()[configuration]
+        config = config_module.createConfiguration()
+        config.init(args)
+        wboarder.start(image=image, configuration=config)
+    except:
+        print("Error loading configuration class")
 
 
 if __name__ == "__main__":

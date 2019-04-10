@@ -23,9 +23,10 @@ class Configuration(ABC):
     #   to **wboarder**.
     #
     #   @param args a list of strings containing the rest of the program
-    #   arguments which were not essential to the application
+    #   arguments which were not essential to the application. You can use
+    #   argparse to parse through the args given
     @abstractmethod
-    def init(args : list) -> None:
+    def init(self, args : list) -> None:
         raise NotImplementedError
 
     ##  Returns the ImageProcessor used by the configuration
@@ -49,3 +50,10 @@ class Configuration(ABC):
     @abstractmethod
     def initDrawer(self) -> Drawer:
         raise NotImplementedError
+
+##  The function the **main** module looks up. Must be implemented in order to
+#   create an instance of the Configuration class
+#
+#   @return a instance of configuration class defined by this module
+def createConfiguration() -> Configuration:
+    raise NotImplementedError
