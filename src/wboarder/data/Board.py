@@ -21,13 +21,13 @@ class Board:
     #   @param default_value the default value to assign to each row
     def __init__(self, num_rows : int, num_cols : int, default_value : object):
         self._num_rows = num_rows
-        self._num_cols = num_rows
+        self._num_cols = num_cols
         points = []
         for i in range(num_rows):
             rows = []
-            for j in range(num_rows):
+            for j in range(num_cols):
                 rows.append(default_value)
-            poins.append(rows)
+            points.append(rows)
         self._points = points
 
     ##  Returns the number of rows on the board
@@ -48,7 +48,7 @@ class Board:
     #   @param row the row number of the entry
     #   @param col the column number of the entry
     #   @return the float value stored at row,col
-    def getValue(self, point : Point) -> object:
+    def get(self, point : Point) -> object:
         row = point.getRow()
         col = point.getCol()
         if 0 <= row < self._num_rows and 0 <= col < self._num_cols:
@@ -63,7 +63,7 @@ class Board:
     #   @param col the column number of the entry being modified
     #   @param value the new value of the entry being modified
     def set(self, row : int, col : int, value : object) -> None:
-        if 0 <= x < self._num_rows and 0 <= y < self._num_cols:
-            self._points[x][y] = value
+        if 0 <= row < self._num_rows and 0 <= col < self._num_cols:
+            self._points[row][col] = value
         else:
             raise ValueError("illegal value for row or col")

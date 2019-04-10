@@ -25,7 +25,7 @@ class LeftToRightPather(Pather):
         for row in range(num_rows):
             for col in range(num_cols):
                 p = Point(row=row, col=col)
-                value = board.getValue(point=p)
+                value = board.get(point=p)
                 if value > 0:
                     path.addPoint(point=p)
         return path

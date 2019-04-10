@@ -28,5 +28,7 @@ class PrintDrawer(Drawer):
     ##  Prints out the points in path in sequence
     #
     def draw(self) -> None:
-        for p in self._path:
+        # FIXME: This needs to be changed, as it isn't how I imagined it
+        points = self._path._points
+        for p in points:
             print(p)

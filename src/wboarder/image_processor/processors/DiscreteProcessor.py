@@ -34,8 +34,8 @@ class DiscreteProcessor(ImageProcessor):
     #   threshold value to DEFAULT_THRESHOLD.
     def __init__(self):
         self._image = None
-        self._threshold = DEFAULT_THRESHOLD
-        self._value_function = MAX_FUNCTION
+        self._threshold = DiscreteProcessor.DEFAULT_THRESHOLD
+        self._value_function = DiscreteProcessor.MAX_FUNCTION
 
     ##
     #   Creates a board instance from the data input
@@ -46,7 +46,7 @@ class DiscreteProcessor(ImageProcessor):
         num_rows, num_cols = image.size
         board = Board(num_rows=num_rows,
                       num_cols=num_cols,
-                      default_value=EMPTY)
+                      default_value=DiscreteProcessor.EMPTY)
         # Iterate over each pixel in the image, and determine the threshold
         f = self._value_function
         threshold = self._threshold
@@ -54,8 +54,10 @@ class DiscreteProcessor(ImageProcessor):
             for col in range(num_cols):
                 r,g,b = image.getpixel((row, col))
                 val = f(r,g,b)
-                if val > threshold:
-                    board.set(row=row, col=col, value=NOT_EMPTY)
+                if val <= threshold:
+                    board.set(row=row,
+                              col=col,
+                              value=DiscreteProcessor.NOT_EMPTY)
         return board
 
     ##

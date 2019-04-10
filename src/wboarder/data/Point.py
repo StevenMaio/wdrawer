@@ -30,4 +30,7 @@ class Point:
         return self._col
 
     def __str__(self):
-        print("({},{})".format(self._row, self._col))
+        return "({},{})".format(self._row, self._col)
+
+    def __repr__(self):
+        return "({},{})".format(self._row, self._col)
