@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['default_5fthreshold',['DEFAULT_THRESHOLD',['../classsrc_1_1wboarder_1_1configuration_1_1configurations_1_1_turtle_plain_config_1_1_turtle_plain_config.html#a6e52b85b1127b1a683fd9b04526b239e',1,'src.wboarder.configuration.configurations.TurtlePlainConfig.TurtlePlainConfig.DEFAULT_THRESHOLD()'],['../classsrc_1_1wboarder_1_1drawer_1_1drawers_1_1_turtle_dot_drawer_1_1_turtle_dot_drawer.html#acc06f93e72dccbd4e9cf273a4a43a8c7',1,'src.wboarder.drawer.drawers.TurtleDotDrawer.TurtleDotDrawer.DEFAULT_THRESHOLD()'],['../classsrc_1_1wboarder_1_1image__processor_1_1processors_1_1_discrete_processor_1_1_discrete_processor.html#ac50798ea2b9ede9368511375db159477',1,'src.wboarder.image_processor.processors.DiscreteProcessor.DiscreteProcessor.DEFAULT_THRESHOLD()']]],
+  ['default_5fwidth',['DEFAULT_WIDTH',['../classsrc_1_1wboarder_1_1drawer_1_1drawers_1_1_turtle_dot_drawer_1_1_turtle_dot_drawer.html#abcd4e424e374d2e4a4069718c71c9b28',1,'src::wboarder::drawer::drawers::TurtleDotDrawer::TurtleDotDrawer']]]
+];
