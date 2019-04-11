@@ -18,15 +18,16 @@ class PrintDrawer(Drawer):
     def __init__(self):
         self._path = None
 
-    ##  Initializes the PrintDrawer instance
+    ##  
+    #   Initializes the PrintDrawer instance
     #
     #   @param board the board from which the path was created
     #   @param path the path which PrintDrawer will 'draw'
     def init(self, board : Board, path : Path) -> None:
         self._path = path
 
-    ##  Prints out the points in path in sequence
-    #
+    ##  
+    #   Prints out the points in path in sequence
     def draw(self) -> None:
         # FIXME: This needs to be changed, as it isn't how I imagined it
         points = self._path._points

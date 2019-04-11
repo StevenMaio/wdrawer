@@ -26,7 +26,7 @@ class Path:
 
     ##
     #   Returns the size of the path
-    def length(self):
+    def length(self) -> int:
         return self._length
 
     def __next__(self) -> Point:

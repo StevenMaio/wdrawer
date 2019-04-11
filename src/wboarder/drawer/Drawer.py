@@ -19,12 +19,12 @@ class Drawer(ABC):
     #
     #   Initializes drawer instance
     @abstractmethod
-    def init(self, board : Board, path : Path):
+    def init(self, board : Board, path : Path) -> None:
         raise NotImplementedError
 
     ##  Abstract method
     #
     #   Draws a object based
     @abstractmethod
-    def draw(self):
+    def draw(self) -> None:
         raise NotImplementedError

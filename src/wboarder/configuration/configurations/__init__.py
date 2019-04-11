@@ -1,1 +1,1 @@
-__all__ = ["PlainConfiguration"]
+__all__ = ["PlainConfiguration", "TurtlePlainConfig"]

@@ -43,7 +43,7 @@ class DiscreteProcessor(ImageProcessor):
     #   @return an instance of board which represents the processed image
     def processImage(self) -> Board:
         image = self._image
-        num_rows, num_cols = image.size
+        num_cols, num_rows = image.size
         board = Board(num_rows=num_rows,
                       num_cols=num_cols,
                       default_value=DiscreteProcessor.EMPTY)
@@ -52,7 +52,7 @@ class DiscreteProcessor(ImageProcessor):
         threshold = self._threshold
         for row in range(num_rows):
             for col in range(num_cols):
-                r,g,b = image.getpixel((row, col))
+                r,g,b = image.getpixel((col, row))
                 val = f(r,g,b)
                 if val <= threshold:
                     board.set(row=row,
