@@ -13,15 +13,17 @@ import turtle
 
 
 ##
-#   Draws an image by creating dots at the points at which an object is set
+#   Draws an image by creating dots at the points of a Path object
 class TurtleDotDrawer(Drawer):
 
     ## The default threshold for the ImageProcessor
     DEFAULT_THRESHOLD = 100
     ## The default distance between points
-    DEFAULT_WIDTH = 5
-    X_OFFSET = -300
-    Y_OFFSET = -300
+    DEFAULT_WIDTH = 8
+
+    # these two settings ar ebecause turtle is werid
+    X_OFFSET = -400 
+    Y_OFFSET = -400
 
     def __init__(self):
         self._path = None
@@ -40,9 +42,12 @@ class TurtleDotDrawer(Drawer):
     ##
     #   Draws the image
     def draw(self) -> None:
+        # initialize turtle settings
         turtle.hideturtle()
         turtle.speed(0)
         turtle.up()
+
+        # TODO: Why can't I iterate over the path???
         points = self._path._points
         width = self._cell_width
         x_offset = TurtleDotDrawer.X_OFFSET
@@ -50,7 +55,6 @@ class TurtleDotDrawer(Drawer):
         for p in points:
             row = p.getRow()
             col = p.getCol()
-
             x = row*width + x_offset
             y = col*width + y_offset
             turtle.setposition(x, y)
